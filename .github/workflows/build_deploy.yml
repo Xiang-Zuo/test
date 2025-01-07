@@ -59,14 +59,14 @@ jobs:
             - name: Checkout Repository
               uses: actions/checkout@v4
 
-            # Download previous builds if they exist
-            - name: Download Previous Builds
-              uses: actions/download-artifact@v4
-              with:
-                name: previous-builds
-                path: dist
-                search-artifacts: true  # Search across workflow runs
-              continue-on-error: true # First run won't have previous builds
+            # # Download previous builds if they exist
+            # - name: Download Previous Builds
+            #   uses: actions/download-artifact@v4
+            #   with:
+            #     name: previous-builds
+            #     path: dist
+            #     search-artifacts: true  # Search across workflow runs
+            #   continue-on-error: true # First run won't have previous builds
 
             #- name: Set GitHub Pages URL to env
             #  run: echo "GH_PAGES_URL=${{ needs.prepare.outputs.public_url }}" >> "$GITHUB_ENV"
@@ -91,13 +91,13 @@ jobs:
                   name: dist
                   path: ./dist
             
-            # Save current builds for next run
-            - name: Save Current Builds
-              uses: actions/upload-artifact@v4
-              with:
-                name: previous-builds
-                path: ./dist
-                retention-days: 90 # Only need to keep until next run
+            # # Save current builds for next run
+            # - name: Save Current Builds
+            #   uses: actions/upload-artifact@v4
+            #   with:
+            #     name: previous-builds
+            #     path: ./dist
+            #     retention-days: 90 # Only need to keep until next run
 
     # deploy the dist for current branch to GitHub Pages
     deploy:
