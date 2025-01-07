@@ -65,6 +65,7 @@ jobs:
               with:
                 name: previous-builds
                 path: dist
+                search-artifacts: true  # Search across workflow runs
               continue-on-error: true # First run won't have previous builds
 
             #- name: Set GitHub Pages URL to env
@@ -96,7 +97,7 @@ jobs:
               with:
                 name: previous-builds
                 path: ./dist
-                retention-days: 1 # Only need to keep until next run
+                retention-days: 90 # Only need to keep until next run
 
     # deploy the dist for current branch to GitHub Pages
     deploy:
