@@ -1,0 +1,15 @@
+title: 
+  en: Code Hero
+  fr: Mise en avant de contenu
+label:
+  en: Code Hero
+  fr: Mise en avant de contenu
+description:
+  en: A prominent section designed to grab attention, featuring a bold title and visually engaging code snippets. Perfect for highlighting key messages or showcasing impactful content at the top of a page.
+  fr: Une section importante conçue pour attirer l'attention, avec un titre audacieux et des extraits de code visuellement attrayants. Parfait pour mettre en avant des messages clés ou présenter un contenu percutant en haut d'une page.
+
+category: hero
+export: true
+
+images:
+  - example.png

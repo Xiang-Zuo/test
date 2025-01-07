@@ -1,0 +1,15 @@
+title: 
+  en: Video Player
+  fr: Lecteur vidéo
+label:
+  en: Video Player
+  fr: Lecteur vidéo
+description: 
+  en: A component designed to display a video.
+  fr: Un composant conçu pour afficher une vidéo.
+
+category: video
+export: true
+
+images:
+  - example.png

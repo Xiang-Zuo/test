@@ -1,0 +1,88 @@
+title: 
+  en: Pricing Features
+  fr: Fonctionnalités de tarification
+label:
+  en: Pricing Features
+  fr: Fonctionnalités de tarification
+description:
+  en: The pricing features section displays a list of features with their pricing.
+  fr: La section des fonctionnalités de tarification affiche une liste de fonctionnalités avec leurs prix.
+
+category: pricing
+export: true
+
+elements:
+  title:
+  subtitle:
+  # list:
+  #   description:
+  #     en: The endnotes of the pricing features section.
+  #     fr: Les notes de fin de la section des fonctionnalités de tarification.
+
+items:
+  separator: divider
+  elements:
+    icon:
+      description:
+        en: The icon of the feature.
+        fr: L'icône de la fonctionnalité.
+    title:
+      description:
+        en: The title of the feature.
+        fr: Le titre de la fonctionnalité.
+    list:
+      description:
+        en: Details of the feature in list format.
+        fr: Détails de la fonctionnalité au format liste.
+
+properties:
+  appearance:
+    label:
+      en: Appearance
+      fr: Apparence
+    type: string
+    default: fancy
+    enum:
+      - label:
+          en: Fancy
+          fr: Fantaisie
+        value: fancy
+    description:
+      en: The appearance of the pricing features.
+      fr: L'apparence des fonctionnalités de tarification.
+  layout_style:
+    label:
+      en: Layout Style
+      fr: Style de mise en page
+    type: string
+    default: grid
+    enum:
+      - label:
+          en: Feature items in a grid
+          fr: Éléments de fonctionnalité en grille
+        value: grid
+      - label:
+          en: Feature items wrapped in a box
+          fr: Éléments de fonctionnalité enveloppés dans une boîte
+        value: box
+    description:
+      en: The appearance preset of the pricing features when appearance is set to fancy.
+      fr: Le préréglage d'apparence des fonctionnalités de tarification lorsque l'apparence est définie sur fantaisie.
+
+presets:
+  fancy_grid:
+    label:
+      en: Fancy appearance in grid layout
+      fr: Apparence fantaisie en mise en page de grille
+    properties:
+      appearance: fancy
+      layout: grid
+    image: fancy_grid.png
+  fancy_box:
+    label:
+      en: Fancy appearance in box layout
+      fr: Apparence fantaisie en mise en page de boîte
+    properties:
+      appearance: fancy
+      layout: box
+    image: fancy_box.png

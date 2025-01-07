@@ -1,0 +1,79 @@
+title: 
+  en: Pricing Hero
+  fr: Bannière de tarification
+label:
+  en: Pricing Hero
+  fr: Bannière de tarification
+description:
+  en: Special section to be used as a hero banner with pricing information.
+  fr: Section spéciale à utiliser comme bannière d'en-tête avec des informations de tarification.
+
+category: pricing
+export: true
+
+elements:
+  pretitle:
+  title:
+  subtitle:
+
+items:
+  separator: divider
+  elements:
+    title:
+      description:
+        en: Title for the one pricing tier or a list of pricing tiers.
+        fr: Titre pour un niveau de tarification ou une liste de niveaux de tarification.
+    subtitle:
+    list:
+      description:
+        en: List of features for one pricing tier.
+        fr: Liste des fonctionnalités pour un niveau de tarification.
+    link:
+      description:
+        en: Action link for one pricing tier.
+        fr: Lien d'action pour un niveau de tarification.
+    icon:
+      description:
+        en: Icon for each pricing tier.
+        fr: Icône pour chaque niveau de tarification.
+    text:
+      description:
+        en: Description for each pricing tier.
+        fr: Description pour chaque niveau de tarification.
+
+properties:
+  appearance:
+    label:
+      en: Appearance
+      fr: Apparence
+    type: string
+    default: subtle
+    enum:
+      - label:
+          en: Subtle
+          fr: Subtil
+        value: subtle
+      - label:
+          en: Fancy
+          fr: Fantaisie
+        value: fancy
+    description:
+      en: The appearance of the pricing tiers.
+      fr: L'apparence des niveaux de tarification.
+
+presets:
+  subtle:
+    label:
+      en: Subtle appearance
+      fr: Apparence subtile
+    properties:
+      appearance: subtle
+      appearance_preset: none
+    image: subtle.png
+  fancy:
+    label:
+      en: Fancy appearance
+      fr: Apparence fantaisie
+    properties:
+      appearance: fancy
+    image: fancy.png

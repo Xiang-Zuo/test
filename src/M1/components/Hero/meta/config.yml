@@ -1,0 +1,60 @@
+title: 
+  en: Hero Banner
+  fr: Bannière d'en-tête
+label:
+  en: Hero
+  fr: En-tête
+description: 
+  en: Special section to be used as a hero banner. Creates a full-width section with a background image and text.
+  fr: Section spéciale à utiliser comme bannière d'en-tête. Crée une section pleine largeur avec une image d'arrière-plan et du texte.
+
+category: hero
+export: true
+
+elements:
+  banner:
+  title:
+  subtitle:
+  link:
+    description: 
+      en: One or two links that put under the text content.
+      fr: Un ou deux liens qui sont placés sous le contenu textuel.
+  media:
+    type: image
+    description: 
+      en: The showcase images placed on the side of the text content.
+      fr: Les images de présentation placées à côté du contenu textuel.
+
+properties:
+  alignment:
+    label: 
+      en: Content Alignment
+      fr: Alignement du contenu
+    type: string
+    default: left
+    enum:
+      - label: 
+          en: Left
+          fr: Gauche
+        value: left
+      - label: 
+          en: Center
+          fr: Centre
+        value: center
+      - label: 
+          en: Right
+          fr: Droite
+        value: right
+    description: 
+      en: The alignment of the text content in the hero section, when showcase images are present, center alignment will be ignored. In smaller screens, text content will be show first, then the showcase images.
+      fr: L'alignement du contenu textuel dans la section d'en-tête, lorsque des images de présentation sont présentes, l'alignement central sera ignoré. Sur les écrans plus petits, le contenu textuel sera affiché en premier, puis les images de présentation.
+
+presets:
+  full_left:
+    label:
+      en: Full-height hero banner with content on the left.
+      fr: Bannière d'en-tête pleine hauteur avec contenu à gauche.
+    properties:
+      height: 100vh
+      alignment: left
+    image: full_left.png

@@ -1,0 +1,64 @@
+title: 
+  en: FAQ
+  fr: FAQ
+label:
+  en: FAQ
+  fr: FAQ
+description: 
+  en: The FAQ section displays a list of frequently asked questions with their answers.
+  fr: La section FAQ affiche une liste de questions fréquemment posées avec leurs réponses.
+
+category: content
+export: true
+
+elements:
+  title:
+  subtitle:
+
+items:
+  separator: divider
+  elements:
+    title:
+      description:
+        en: The title of the FAQ section.
+        fr: Le titre de la section FAQ.
+    text:
+      description:
+        en: The answer to the question.
+        fr: La réponse à la question.
+
+properties:
+  appearance:
+    label:
+      en: Appearance
+      fr: Apparence
+    type: string
+    default: subtle
+    enum:
+      - label:
+          en: Subtle
+          fr: Subtil
+        value: subtle
+      - label:
+          en: Fancy
+          fr: Fantaisie
+        value: fancy
+    description:
+      en: The appearance of the FAQ.
+      fr: L'apparence de la FAQ.
+  
+presets:
+  subtle:
+    label:
+      en: Subtle appearance
+      fr: Apparence subtile
+    properties:
+      appearance: subtle
+    image: subtle.png
+  fancy:
+    label:
+      en: Fancy appearance with no preset
+      fr: Apparence fantaisie sans préréglage
+    properties:
+      appearance: fancy
+    image: fancy.png

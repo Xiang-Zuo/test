@@ -1,0 +1,92 @@
+title:
+  en: Feature Item
+  fr: Élément de fonctionnalité
+label:
+  en: Feature Item
+  fr: Élément de fonctionnalité
+description:
+  en: A specific component used to display a feature in different ways. Each mode expect different type of content to be displayed. Ideally used as the child of a feature section.
+  fr: Un composant spécifique utilisé pour afficher une fonctionnalité de différentes manières. Chaque mode attend un type de contenu différent à afficher. Idéalement utilisé comme enfant d'une section de fonctionnalités.
+
+category: sub-content
+export: true
+
+elements:
+  icon:
+  title:
+  subtitle:
+  text:
+  link:
+
+properties:
+  with_border:
+    label:
+      en: With Border
+      fr: Avec bordure
+    type: boolean
+    default: false
+    description:
+      en: Whether the feature item should have a border or not.
+      fr: Si l'élément de fonctionnalité doit avoir une bordure ou non.
+  with_motion:
+    label:
+      en: With Motion
+      fr: Avec mouvement
+    type: boolean
+    default: false
+    description:
+      en: Whether the feature item should have a motion effect or not.
+      fr: Si l'élément de fonctionnalité doit avoir un effet de mouvement ou non.
+  mode:
+    label:
+      en: Mode
+      fr: Mode
+    type: string
+    default: basic
+    enum:
+      - label:
+          en: Basic (title, text and a link)
+          fr: Basique (titre, texte et un lien)
+        value: basic
+      - label:
+          en: Leading icon (icon, title, text and links)
+          fr: Icône principale (icône, titre, texte et liens)
+        value: leading_icon
+      - label:
+          en: Rich (icon, title, text and links)
+          fr: Riche (icône, titre, texte et liens)
+        value: rich
+      - label:
+          en: Catching Card (icon, title, text and link)
+          fr: Carte attrayante (icône, titre, texte et lien)
+        value: catching_card
+      - label:
+          en: Bullet List (icon, title and list)
+          fr: Liste à puces (icône, titre et liste)
+        value: bullet_list
+    description:
+      en: The mode of the feature item.
+      fr: Le mode de l'élément de fonctionnalité.
+
+presets:
+  # basic:
+  #   label:
+  #     en: Basic Feature Item
+  #     fr: Élément de fonctionnalité basique
+  #   properties:
+  #     mode: basic
+  #   image: basic.png
+  rich:
+    label:
+      en: Rich Feature Item
+      fr: Élément de fonctionnalité riche
+    properties:
+      mode: rich
+    image: rich.png
+  catching_card:
+    label:
+      en: Catching Card Feature Item
+      fr: Élément de fonctionnalité carte attrayante
+    properties:
+      mode: catching_card
+    image: catching_card.png
